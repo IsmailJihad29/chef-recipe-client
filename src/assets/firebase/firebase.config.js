@@ -5,15 +5,14 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBq63KVgOR-6bHmNCRiMqM5WF0E7K_Ii_Y",
-  authDomain: "hungry-head-39049.firebaseapp.com",
-  projectId: "hungry-head-39049",
-  storageBucket: "hungry-head-39049.appspot.com",
-  messagingSenderId: "910345527646",
-  appId: "1:910345527646:web:94aa08119c4b08bb9fefcf"
+  apiKey: "AIzaSyC6kkXWa8QD1PZ6YOgD6Kd7Tlb_HZbD4N0",
+  authDomain: "the-hungry-head.firebaseapp.com",
+  projectId: "the-hungry-head",
+  storageBucket: "the-hungry-head.appspot.com",
+  messagingSenderId: "822934795953",
+  appId: "1:822934795953:web:156c9056642a64980d5490"
 };
 
 // Initialize Firebase
-// eslint-disable-next-line no-unused-vars
 const app = initializeApp(firebaseConfig);
 export default app;
