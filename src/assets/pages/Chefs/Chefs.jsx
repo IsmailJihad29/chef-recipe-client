@@ -5,13 +5,15 @@ const Chefs = ({ chefs }) => {
     const {yearsExperience, likes,numRecipes,chefPhoto,chefName } = chefs;
     return (
         <>
-            <div className="card card-compact md:w-80 sm:w-40 bg-base-100 shadow-xl">
+            <div className="card card-compact w-full  bg-gradient-to-r from-fuchsia-200 to-violet-200 hover:bg-gradient-to-r shadow-xl">
   <figure><img  src={chefPhoto} alt="" className='h-48 w-full' /></figure>
   <div className="card-body">
-                    <h2 className="card-title">{ chefName}</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <h2 className="card-title">{ chefName}</h2>
+                    <p>Year Of Experience: { yearsExperience}</p>
+                    <p>Number Of Recipes: { numRecipes}</p>
+                    <p>Total Likes: { likes}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button to={'/chefSection'} className="button">See Chefs Details</button>
     </div>
   </div>
 </div>

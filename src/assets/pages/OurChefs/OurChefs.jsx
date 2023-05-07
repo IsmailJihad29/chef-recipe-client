@@ -10,7 +10,7 @@ const OurChefs = () => {
     }, [])
 
     return (
-        <div className='w-9/12 mx-auto mt-10 mb-6'>
+        <div className='w-9/12 mx-auto mt-6 mb-6'>
             <h1 className='text-center font-bold text-4xl mb-6 text-purple-500'>MEET OUR CHIEF CHEFS</h1>
             <div className='grid md:grid-cols-3 sm:grid-cols-2 justify-center gap-6'>
             {
