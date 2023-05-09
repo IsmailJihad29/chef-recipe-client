@@ -58,7 +58,7 @@ const Navbar = () => {
             title='Open Menu'
             onClick={() => setIsMenuOpen(true)}
           >
-            <FaBars/>
+            <FaBars className='text-purple-600'/>
              </button>
                     
           {isMenuOpen && (

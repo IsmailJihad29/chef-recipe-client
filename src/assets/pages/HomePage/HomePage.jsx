@@ -3,12 +3,13 @@ import backgroundImage from '../../../../public/banner1.png'
 import banner from '../../../../public/banner.jpg'
 import { Link } from 'react-router-dom';
 import OurChefs from '../OurChefs/OurChefs';
+import Recipes from '../Recipes/Recipes';
 const HomePage = () => {
     return (
         <>
-         <div>
+         <div className='bg-gray-200'>
 
-            <div className='my-container mx-auto flex flex-col items-center justify-between lg:flex-row'>
+            <div className='my-container mx-auto flex flex-col items-center justify-between lg:flex-row '>
       {/* Text Content */}
       <div className='mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0'>
         <div className='max-w-xl mb-6 lg:mt-8'>
@@ -32,7 +33,8 @@ const HomePage = () => {
                     <img src={backgroundImage} alt="" />
             </div>
             </div>
-            <OurChefs/>
+        <OurChefs />
+        {/* <Recipes/> */}
         </>
     );
 };

@@ -4,7 +4,7 @@ import Chefs from '../Chefs/Chefs';
 const OurChefs = () => {
     const [ourChef, setOurChef] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/chefsRecipes')
+        fetch('http://localhost:5000/chefs')
             .then((res) => res.json())
         .then((data)=> setOurChef(data))
     }, [])

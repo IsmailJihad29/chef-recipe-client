@@ -19,3 +19,6 @@
   .button{
     @apply btn bg-gradient-to-r from-violet-500 to-fuchsia-500  text-white font-bold
   }
+  .background{
+    @apply bg-gradient-to-r from-fuchsia-200 to-violet-200
+  }
