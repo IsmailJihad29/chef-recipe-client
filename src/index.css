@@ -22,3 +22,6 @@
   .background{
     @apply bg-gradient-to-r from-fuchsia-200 to-violet-200
   }
+  .background-2{
+    @apply bg-gradient-to-r from-cyan-300 to-blue-300
+  }

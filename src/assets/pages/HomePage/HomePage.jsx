@@ -23,7 +23,7 @@ const HomePage = () => {
           </p>
         </div>
         <div className='flex flex-col items-center md:flex-row'>
-          <Link to='' className='btn btn-primary bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:bg-gradient-to-r md:w-auto md:mr-4'>
+          <Link to='/recipes' className='btn btn-primary bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:bg-gradient-to-r md:w-auto md:mr-4'>
             <div className='inline-flex items-center justify-center w-full h-full'>
               <p className='mr-3'>View Recipes</p>
             </div>
