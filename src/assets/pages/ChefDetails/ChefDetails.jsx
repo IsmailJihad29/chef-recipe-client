@@ -8,13 +8,16 @@ const ChefDetails = () => {
  
     return (
       <div className='my-container'>
+        
     <div className="card lg:card-side w-9/12 bg-base-100 shadow-xl mx-auto">
   <figure><img src={chefPhoto} className='h-96' alt="Album"/></figure>
   <div className="card-body">
-    <h2 className="card-title">New album is released!</h2>
-    <p>Click the button to listen on Spotiwhy app.</p>
+            <h2 className="card-title">{ chefName}</h2>
+            <p>{ bio}</p>
+            <p><span className='font-bold text-cyan-400'>Year Of Experience</span>: { yearsExperience}</p>
+            <p>Recipes: { numRecipes}</p>
+            <p>Likes: { likes}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Listen</button>
     </div>
   </div>
         </div>
@@ -27,7 +30,7 @@ const ChefDetails = () => {
               
               
               <div className="card w-full bg-base-100 shadow-xl h-full image-full">
-  <figure><img src={recipe.recipePhoto} className='' alt="Shoes" /></figure>
+  <figure><img src={recipe.recipePhoto} className='' alt="" /></figure>
   <div className="card-body">
                   <h2 className="card-title font-bold text-3xl text-yellow-500">{recipe.name}</h2>
                   <p>Ingredients <br />
@@ -36,7 +39,6 @@ const ChefDetails = () => {
                   }
                   </p>
                   <p><span className='font-semibold text-yellow-500'>Cooking Method:</span> {recipe.cookingMethod }</p>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
                   <div className="card-actions justify-end">
                     <p className='font-bold flex items-center'> { recipe.rating} <FaStar className='text-yellow-400'></FaStar></p>
       <button className="btn btn-primary">Add To Fav</button>
