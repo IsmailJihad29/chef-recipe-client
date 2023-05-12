@@ -14,10 +14,10 @@ const ChefDetails = () => {
   <div className="card-body">
             <h2 className="card-title">{ chefName}</h2>
             <p>{ bio}</p>
-            <p><span className='font-bold text-cyan-400'>Year Of Experience</span>: { yearsExperience}</p>
-            <p>Recipes: { numRecipes}</p>
-            <p>Likes: { likes}</p>
-    <div className="card-actions justify-end">
+            <p className='font-bold text-emerald-600'> { yearsExperience} Year Of Experience</p>
+            <p className='text-emerald-600 font-semibold'>{ numRecipes} Recipes </p>
+            <p className='text-emerald-600 font-semibold'> { likes} Likes</p>
+    <div className="card-actions justify-end ">
     </div>
   </div>
         </div>
@@ -33,7 +33,7 @@ const ChefDetails = () => {
   <figure><img src={recipe.recipePhoto} className='' alt="" /></figure>
   <div className="card-body">
                   <h2 className="card-title font-bold text-3xl text-yellow-500">{recipe.name}</h2>
-                  <p>Ingredients <br />
+                  <p ><span className='font-semibold text-xl'>Ingredients</span> <br />
                   {
                     recipe.ingredients.map(ingredient => <li>{ingredient }</li>)
                   }
@@ -41,7 +41,7 @@ const ChefDetails = () => {
                   <p><span className='font-semibold text-yellow-500'>Cooking Method:</span> {recipe.cookingMethod }</p>
                   <div className="card-actions justify-end">
                     <p className='font-bold flex items-center'> { recipe.rating} <FaStar className='text-yellow-400'></FaStar></p>
-      <button className="btn btn-primary">Add To Fav</button>
+      <button className="btn button">Add To Fav</button>
     </div>
   </div>
 </div>
