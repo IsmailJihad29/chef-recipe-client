@@ -4,6 +4,7 @@ import banner from '../../../../public/banner.jpg'
 import { Link } from 'react-router-dom';
 import OurChefs from '../OurChefs/OurChefs';
 import Recipes from '../Recipes/Recipes';
+import Reviews from '../Reviews/Reviews';
 const HomePage = () => {
     return (
         <>
@@ -34,7 +35,9 @@ const HomePage = () => {
             </div>
             </div>
         <OurChefs />
-        {/* <Recipes/> */}
+        {/* reviews  */}
+        <Reviews/>
+
         </>
     );
 };
